@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>choose-your-own-adventure — CLI Game</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:#0f1724;color:#e6edf3;padding:2rem}
+    .card{max-width:900px;margin:0 auto;background:#071024;border-radius:12px;padding:2rem;box-shadow:0 10px 30px rgba(2,6,23,.6)}
+    img.preview{max-width:100%;border-radius:8px}
+    .badges img{height:22px;margin-right:.5rem}
+    a.button{display:inline-block;margin-top:1rem;padding:.6rem 1rem;background:#06b6d4;color:#00223a;border-radius:8px;text-decoration:none}
+    pre{background:#00121a;padding:1rem;border-radius:8px;overflow:auto}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🎲 choose-your-own-adventure</h1>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/python-3.8%2B-blue" alt="python">
+      <img src="https://img.shields.io/badge/license-MIT-green" alt="license">
+    </div>
+
+    <p>
+      A lightweight, extensible command-line "choose your own adventure" game template in Python.
+    </p>
+
+    <img class="preview" src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" alt="game preview">
+
+    <h2>Quick start</h2>
+    <ol>
+      <li>Clone the repo: <code>git clone &lt;your-repo-url&gt;</code></li>
+      <li>Install deps: <code>pip install -r requirements.txt</code></li>
+      <li>Run the game: <code>python -m adventure</code></li>
+    </ol>
+
+    <a class="button" href="https://github.com/vannu07/choose-your-own-adventure">View on GitHub</a>
+
+    <h3>Run locally</h3>
+    <pre>python -m adventure</pre>
+
+    <footer style="margin-top:1.5rem;color:#9fb6c6">
+      Deployed with GitHub Actions → GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
