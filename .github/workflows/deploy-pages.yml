@@ -1,5 +1,10 @@
 name: Deploy docs to GitHub Pages
 
+# grant the workflow the permissions required to push and update Pages
+permissions:
+  contents: write
+  pages: write
+
 on:
   push:
     branches:
@@ -11,6 +16,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # allow git push with the provided GITHUB_TOKEN
+          persist-credentials: true
 
       - name: Deploy docs/ to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
