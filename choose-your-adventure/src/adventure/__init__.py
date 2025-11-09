@@ -1,0 +1,1 @@
+# This file initializes the adventure package. It can be used to define package-level variables or imports.

@@ -1,0 +1,94 @@
+title: "The Beginning of Your Adventure"
+scenes:
+  start:
+    description: "You find yourself in a dark forest. The trees are tall and the path is unclear."
+    choices:
+      - text: "Follow the path to the left."
+        next_scene: "left_path"
+      - text: "Follow the path to the right."
+        next_scene: "right_path"
+  left_path:
+    description: "You encounter a friendly deer who offers to guide you."
+    choices:
+      - text: "Accept the deer's help."
+        next_scene: "deer_help"
+      - text: "Refuse and continue on your own."
+        next_scene: "continue_alone"
+  right_path:
+    description: "You stumble upon a hidden cave."
+    choices:
+      - text: "Enter the cave."
+        next_scene: "cave"
+      - text: "Turn back and go to the starting point."
+        next_scene: "start"
+  deer_help:
+    description: "The deer leads you to a beautiful clearing."
+    choices:
+      - text: "Rest in the clearing."
+        next_scene: "rest"
+      - text: "Continue exploring."
+        next_scene: "explore"
+  continue_alone:
+    description: "You wander deeper into the forest and get lost."
+    choices:
+      - text: "Try to find your way back."
+        next_scene: "start"
+      - text: "Sit down and wait for help."
+        next_scene: "wait_for_help"
+  cave:
+    description: "Inside the cave, you find ancient drawings on the walls."
+    choices:
+      - text: "Examine the drawings."
+        next_scene: "examine_drawings"
+      - text: "Leave the cave."
+        next_scene: "start"
+  rest:
+    description: "You feel refreshed and ready for your next adventure."
+    choices:
+      - text: "Go back to the start."
+        next_scene: "start"
+      - text: "Explore the forest further."
+        next_scene: "explore"
+  explore:
+    description: "You discover a hidden waterfall."
+    choices:
+      - text: "Swim in the waterfall."
+        next_scene: "swim"
+      - text: "Sit and enjoy the view."
+        next_scene: "enjoy_view"
+  wait_for_help:
+    description: "Help arrives, but you have missed many adventures."
+    choices:
+      - text: "Start over."
+        next_scene: "start"
+  examine_drawings:
+    description: "The drawings tell the story of a great hero."
+    choices:
+      - text: "Follow the hero's path."
+        next_scene: "hero_path"
+      - text: "Leave the cave."
+        next_scene: "start"
+  swim:
+    description: "You have a great time swimming and find a treasure chest!"
+    choices:
+      - text: "Open the treasure chest."
+        next_scene: "treasure"
+      - text: "Leave it and go back."
+        next_scene: "start"
+  enjoy_view:
+    description: "You feel at peace and decide to head back."
+    choices:
+      - text: "Return to the start."
+        next_scene: "start"
+  treasure:
+    description: "Inside the chest, you find gold and jewels!"
+    choices:
+      - text: "Take the treasure."
+        next_scene: "take_treasure"
+      - text: "Leave it for others."
+        next_scene: "start"
+  hero_path:
+    description: "You embark on a legendary journey."
+    choices:
+      - text: "Continue the adventure."
+        next_scene: "start"
