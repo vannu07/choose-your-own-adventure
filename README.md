@@ -9,40 +9,38 @@ Badges
 - ![License](https://img.shields.io/badge/license-MIT-green)
 
 Quick Preview
-- Run the game: `python -m adventure` (entry: [`adventure.__main__`](choose-your-adventure/src/adventure/__main__.py))
-- Main CLI helpers: see [`adventure.cli.display_welcome`](choose-your-adventure/src/adventure/cli.py)
-- Game engine: see [`adventure.engine.AdventureEngine`](choose-your-adventure/src/adventure/engine.py)
+- Run the game: `python -m adventure` (entry: `src/adventure/__main__.py`)
+- View the repo: https://github.com/vannu07/choose-your-own-adventure
+- Live GitHub Pages (after deploy): https://vannu07.github.io/choose-your-own-adventure
 
 What’s inside
-- Source: [choose-your-adventure/src/adventure](choose-your-adventure/src/adventure)
-  - Command line UI: [`adventure.cli.display_welcome`](choose-your-adventure/src/adventure/cli.py), [`adventure.cli.get_choice`](choose-your-adventure/src/adventure/cli.py)
-  - Engine: [`adventure.engine.AdventureEngine`](choose-your-adventure/src/adventure/engine.py)
-  - Scenes: [`adventure.scenes.Scene`](choose-your-adventure/src/adventure/scenes.py), [`adventure.scenes.SceneManager`](choose-your-adventure/src/adventure/scenes.py)
-  - Choices model: [`adventure.choices.Choice`](choose-your-adventure/src/adventure/choices.py)
-  - Story data: [starter_story.yaml](choose-your-adventure/src/adventure/data/stories/starter_story.yaml)
-- Tests: [choose-your-adventure/tests/test_engine.py](choose-your-adventure/tests/test_engine.py), [choose-your-adventure/tests/test_scenes.py](choose-your-adventure/tests/test_scenes.py)
-- Project config: [choose-your-adventure/pyproject.toml](choose-your-adventure/pyproject.toml), [choose-your-adventure/requirements.txt](choose-your-adventure/requirements.txt)
+- Source: `src/adventure`
+  - Command line UI: `src/adventure/cli.py`
+  - Engine: `src/adventure/engine.py`
+  - Scenes: `src/adventure/scenes.py`
+  - Choices model: `src/adventure/choices.py`
+  - Story data: `src/adventure/data/stories/starter_story.yaml`
+- Tests: `tests/`
+- Project config: `pyproject.toml`, `requirements.txt`
 
 Setup
 
 1. Install dependencies:
 ```sh
-pip install -r choose-your-adventure/requirements.txt
+pip install -r requirements.txt
 ```
 
 2. Run the game:
 ```sh
 python -m adventure
 ```
-(See entrypoint at [`choose-your-adventure/src/adventure/__main__.py`](choose-your-adventure/src/adventure/__main__.py).)
 
 Adding your own animated preview
-- Add an animated GIF to `choose-your-adventure/assets/preview.gif` and update the top image link.
-- Or replace the example GIF URL with your hosted GIF.
+- Add an animated GIF to `assets/preview.gif` and update the top image link if desired.
 
 Contributing
 - Report bugs or propose features via issues / PRs.
-- Run tests: `pytest choose-your-adventure/tests`
+- Run tests: `pytest`
 
 License
 - MIT
