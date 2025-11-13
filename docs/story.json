@@ -1,0 +1,53 @@
+{
+  "start": {
+    "id": "start",
+    "title": "A Dark Forest",
+    "text": "You wake up in a dark forest. Mist curls between the ancient trees. Two paths lie ahead.",
+    "choices": [
+      { "id": "left", "label": "Take the left path" },
+      { "id": "right", "label": "Take the right path" }
+    ]
+  },
+  "left": {
+    "id": "left",
+    "title": "Abandoned Cabin",
+    "text": "You find an abandoned cabin. A faint light flickers inside.",
+    "choices": [
+      { "id": "enter", "label": "Enter the cabin" },
+      { "id": "start", "label": "Go back to the fork" }
+    ]
+  },
+  "right": {
+    "id": "right",
+    "title": "Rushing River",
+    "text": "A rushing river blocks the path. A rickety bridge sways in the wind.",
+    "choices": [
+      { "id": "cross", "label": "Cross the bridge" },
+      { "id": "start", "label": "Return to the fork" }
+    ]
+  },
+  "enter": {
+    "id": "enter",
+    "title": "Warm Hearth",
+    "text": "Inside, a friendly fire and a warm stew await. You are safe... for now.",
+    "choices": [
+      { "id": "end", "label": "Rest (End)" }
+    ]
+  },
+  "cross": {
+    "id": "cross",
+    "title": "On the Other Side",
+    "text": "You safely cross and find a small village. The adventure continues elsewhere.",
+    "choices": [
+      { "id": "end", "label": "Celebrate (End)" }
+    ]
+  },
+  "end": {
+    "id": "end",
+    "title": "The End",
+    "text": "Thank you for playing this demo.",
+    "choices": [
+      { "id": "start", "label": "Play again" }
+    ]
+  }
+}
