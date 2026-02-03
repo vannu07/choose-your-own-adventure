@@ -1,5 +1,5 @@
 name: Pylint
-#python
+# Run pylint on all tracked Python files for multiple Python versions
 on: [push]
 
 jobs:
