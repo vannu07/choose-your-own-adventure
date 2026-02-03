@@ -21,4 +21,4 @@ jobs:
         pip install -r choose-your-adventure/requirements.txt
     - name: Analysing the code with pylint
       run: |
-        pylint choose-your-adventure/src/adventure/*.py choose-your-adventure/tests/*.py
+        pylint choose-your-adventure/src/adventure/ choose-your-adventure/tests/
