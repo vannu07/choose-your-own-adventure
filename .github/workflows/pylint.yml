@@ -1,5 +1,5 @@
 name: Pylint
-
+#python
 on: [push]
 
 jobs:
