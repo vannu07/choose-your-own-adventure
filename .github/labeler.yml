@@ -1,0 +1,17 @@
+# Add labels based on file paths changed in PRs
+
+documentation:
+  - changed-files:
+    - any-glob-to-any-file: ['**/*.md', 'docs/**/*']
+
+tests:
+  - changed-files:
+    - any-glob-to-any-file: ['**/tests/**/*', '**/*test*.py']
+
+source:
+  - changed-files:
+    - any-glob-to-any-file: ['choose-your-adventure/src/**/*']
+
+workflows:
+  - changed-files:
+    - any-glob-to-any-file: ['.github/workflows/**/*']
