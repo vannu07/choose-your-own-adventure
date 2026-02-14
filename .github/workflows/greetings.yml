@@ -1,0 +1,22 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v3.1.0
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: >
+          👋 Thanks for opening your first issue in this repository! We appreciate you taking the time to contribute.
+          Please review our contribution guidelines at /CONTRIBUTING.md and our code of conduct at /CODE_OF_CONDUCT.md
+          to understand how to report bugs, request features, and participate in discussions.
+        pr-message: >
+          🎉 Thanks for submitting your first pull request to this repository! Your contribution helps improve the project.
+          Before we review your changes, please make sure you have read /CONTRIBUTING.md for our coding and review process,
+          and /CODE_OF_CONDUCT.md for our community standards. A maintainer will be with you as soon as possible.

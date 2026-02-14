@@ -1,17 +1,23 @@
-# Add labels based on file paths changed in PRs
+# Pull Request Labeler Configuration
+# This file configures automatic labeling of pull requests based on changed files
 
 documentation:
-  - changed-files:
-    - any-glob-to-any-file: ['**/*.md', 'docs/**/*']
+  - '**/*.md'
+  - 'docs/**/*'
 
 tests:
-  - changed-files:
-    - any-glob-to-any-file: ['**/tests/**/*', '**/*test*.py']
+  - '**/tests/**'
+  - '**/*test*.py'
 
-source:
-  - changed-files:
-    - any-glob-to-any-file: ['choose-your-adventure/src/**/*']
+python:
+  - '**/*.py'
+  - '**/requirements.txt'
+  - '**/pyproject.toml'
 
 workflows:
-  - changed-files:
-    - any-glob-to-any-file: ['.github/workflows/**/*']
+  - '.github/workflows/**'
+
+frontend:
+  - 'docs/**/*.html'
+  - 'docs/**/*.js'
+  - 'docs/**/*.json'
