@@ -2,22 +2,33 @@
 # This file configures automatic labeling of pull requests based on changed files
 
 documentation:
-  - '**/*.md'
-  - 'docs/**/*'
+  - changed-files:
+    - any-glob-to-any-file: '**/*.md'
+  - changed-files:
+    - any-glob-to-any-file: 'docs/**/*'
 
 tests:
-  - '**/tests/**'
-  - '**/*test*.py'
+  - changed-files:
+    - any-glob-to-any-file: '**/tests/**'
+  - changed-files:
+    - any-glob-to-any-file: '**/*test*.py'
 
 python:
-  - '**/*.py'
-  - '**/requirements.txt'
-  - '**/pyproject.toml'
+  - changed-files:
+    - any-glob-to-any-file: '**/*.py'
+  - changed-files:
+    - any-glob-to-any-file: '**/requirements.txt'
+  - changed-files:
+    - any-glob-to-any-file: '**/pyproject.toml'
 
 workflows:
-  - '.github/workflows/**'
+  - changed-files:
+    - any-glob-to-any-file: '.github/workflows/**'
 
 frontend:
-  - 'docs/**/*.html'
-  - 'docs/**/*.js'
-  - 'docs/**/*.json'
+  - changed-files:
+    - any-glob-to-any-file: 'docs/**/*.html'
+  - changed-files:
+    - any-glob-to-any-file: 'docs/**/*.js'
+  - changed-files:
+    - any-glob-to-any-file: 'docs/**/*.json'
